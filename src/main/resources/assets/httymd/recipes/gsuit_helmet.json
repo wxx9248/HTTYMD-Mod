@@ -1,0 +1,26 @@
+{
+  "result": {
+    "item": "httymd:gsuit_helmet",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "IWI",
+    "LIL"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "I": {
+      "ore": "ingotIron",
+      "type": "forge:ore_dict"
+    },
+    "L": {
+      "ore": "leather",
+      "type": "forge:ore_dict"
+    }
+  }
+}

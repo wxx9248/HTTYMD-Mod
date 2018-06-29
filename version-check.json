@@ -1,0 +1,10 @@
+{
+  "homepage": "",
+  "promos": {
+    "1.12.2-latest": "1.1.0",
+    "1.12.2-recommended": "1.1.0"
+  },
+  "1.12.2": {
+  	"1.1.0": "Ported to Minecraft 1.12.2 Added the ability for tamed dragons to sit. (Only visible for the Night Fury) Added the Light Fury (model might not be accurate)",
+  }
+}

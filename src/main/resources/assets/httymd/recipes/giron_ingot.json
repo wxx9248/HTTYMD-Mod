@@ -1,0 +1,14 @@
+{
+  "result": {
+    "item": "httymd:giron_ingot",
+    "data": 0,
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "httymd:giron_block",
+      "data": 0
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

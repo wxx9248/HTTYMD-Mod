@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "httymd:waraxe_stone",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "#|#",
+    "#|#",
+    " | "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "#": {
+      "ore": "cobblestone",
+      "type": "forge:ore_dict"
+    },
+    "|": {
+      "ore": "stickWood",
+      "type": "forge:ore_dict"
+    }
+  }
+}

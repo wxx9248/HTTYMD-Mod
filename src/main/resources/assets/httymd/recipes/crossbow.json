@@ -1,0 +1,26 @@
+{
+  "result": {
+    "item": "httymd:crossbow",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "S#S",
+    "III"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:bow",
+      "data": 0
+    },
+    "S": {
+      "ore": "string",
+      "type": "forge:ore_dict"
+    },
+    "I": {
+      "ore": "ingotIron",
+      "type": "forge:ore_dict"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "httymd:flame_sword",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "S",
+    "#"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:iron_sword",
+      "data": 0
+    },
+    "#": {
+      "item": "minecraft:coal",
+      "data": 0
+    }
+  }
+}

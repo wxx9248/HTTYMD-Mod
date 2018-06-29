@@ -1,0 +1,27 @@
+{
+  "result": {
+    "item": "httymd:gsuit_chestplate",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "LWL",
+    "#L#",
+    "LLL"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "#": {
+      "item": "httymd:wing_item",
+      "data": 0
+    },
+    "W": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "L": {
+      "ore": "leather",
+      "type": "forge:ore_dict"
+    }
+  }
+}

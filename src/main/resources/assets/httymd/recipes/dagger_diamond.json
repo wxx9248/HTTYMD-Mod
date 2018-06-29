@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "httymd:dagger_diamond",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "#",
+    "|"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "#": {
+      "ore": "gemDiamond",
+      "type": "forge:ore_dict"
+    },
+    "|": {
+      "ore": "stickWood",
+      "type": "forge:ore_dict"
+    }
+  }
+}

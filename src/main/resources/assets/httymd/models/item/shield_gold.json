@@ -1,0 +1,9 @@
+{
+  "parent": "httymd:item/shield_base",
+  "textures": {
+    "layer0": "httymd:items/shield_gold"
+  },
+  "overrides": [
+    { "predicate": { "blocking": 1 }, "model": "httymd:item/shield_gold_blocking" }
+  ]
+}

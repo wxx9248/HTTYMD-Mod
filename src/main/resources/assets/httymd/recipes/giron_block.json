@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "httymd:giron_block",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "I": {
+      "item": "httymd:giron_ingot",
+      "data": 0
+    }
+  }
+}

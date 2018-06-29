@@ -1,0 +1,6 @@
+{
+  "parent": "httymd:item/shield_base_blocking",
+  "textures": {
+    "layer0": "httymd:items/shield_gronkle"
+  }
+}

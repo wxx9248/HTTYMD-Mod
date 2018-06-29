@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "httymd:gsuit_leggings",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "LLL",
+    "I I",
+    "L L"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "I": {
+      "ore": "ingotIron",
+      "type": "forge:ore_dict"
+    },
+    "L": {
+      "ore": "leather",
+      "type": "forge:ore_dict"
+    }
+  }
+}

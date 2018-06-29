@@ -1,0 +1,31 @@
+package com.httymd.util;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import com.httymd.HTTYMDMod;
+import com.httymd.item.ItemExtension;
+
+public class CreativeTab extends CreativeTabs {
+
+	public static Item tabIcon = new ItemExtension("tab_icon_item").registerItem().setCreativeTab(null);
+	public static final CreativeTab DRAGON_TAB = new CreativeTab(HTTYMDMod.ID + ":mcdTab", tabIcon);
+
+	private final Item icon;
+
+	public CreativeTab(String name, Item icon) {
+		super(name);
+		this.icon = icon;
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public ItemStack getTabIconItem() {
+		return new ItemStack(this.icon);
+	}
+
+}

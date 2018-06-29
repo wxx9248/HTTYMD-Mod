@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "httymd:mace_gold",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    " # ",
+    "#|#",
+    " | "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "#": {
+      "ore": "ingotGold",
+      "type": "forge:ore_dict"
+    },
+    "|": {
+      "ore": "stickWood",
+      "type": "forge:ore_dict"
+    }
+  }
+}

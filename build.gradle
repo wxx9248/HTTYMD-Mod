@@ -1,97 +1,75 @@
 buildscript {
-	repositories {
-		mavenCentral()
-		maven {
-			name = "forge"
-			url = "http://files.minecraftforge.net/maven"
-		}
-		maven {
-			name = "sonatype"
-			url = "https://oss.sonatype.org/content/repositories/snapshots/"
-		}
-	}
-	dependencies {
-		classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-
-		classpath fileTree(dir: 'libs', include: '*.jar')
-	}
+    repositories {
+        jcenter()
+        maven { url = "http://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
 }
+apply plugin: 'net.minecraftforge.gradle.forge'
+//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
-apply plugin: 'idea'
-idea {
-	module {
-		inheritOutputDirs = true
-	}
+
+version = "1.1.0_MC-1.12.2"
+group = "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "httymd"
+
+sourceCompatibility = targetCompatibility = "1.8" // Need this here so eclipse task generates correctly.
+compileJava {
+    sourceCompatibility = targetCompatibility = "1.8"
 }
-
-apply plugin: 'forge'
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
-
-ext.configFile = file "mod.prop"
-configFile.withReader {
-	// Load config. Can be referenced as config
-	def prop = new Properties()
-	prop.load(it)
-	ext.config = new ConfigSlurper().parse prop
-}
-
-version = config.mcversion+"-"+config.forgeversion+"F-"+config.modversion //"1.7.10-10.13.2.1230F-1.0.2R"
-group= "com.httymd" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "HTTYMD"
-
 minecraft {
-	version = config.mcversion+"-"+config.forgeversion //"1.7.10-10.13.2.1230"
-	runDir = "minecraft"
-}
-
-
-sourceSets {
-	main {
-		java { srcDir 'java' }
-		resources { srcDir 'resources' include('**') }
-	}
-}
-
-processResources
-{
-	// this will ensure that this task is redone when the versions change.
-	inputs.property "version", project.version
-	inputs.property "mcversion", project.minecraft.version
-
-	from(sourceSets.main.resources.srcDirs) {
-		include 'mcmod.info'
-		// replace version and mcversion
-		expand 'version':config.modversion, 'mcversion':config.mcversion
-	}
+    version = "1.12.2-14.23.2.2611"
+    runDir = "run"
+    
+    // the mappings can be changed at any time, and must be in the following format.
+    // snapshot_YYYYMMDD   snapshot are built nightly.
+    // stable_#            stables are built at the discretion of the MCP team.
+    // Use non-default mappings at your own risk. they may not always work.
+    // simply re-run your setup task after changing the mappings to update your workspace.
+    mappings = "snapshot_20180218"
+    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
 dependencies {
+    // you may put jars on which you depend on in ./libs
+    // or you may define them like so..
+    //compile "some.group:artifact:version:classifier"
+    //compile "some.group:artifact:version"
+      
+    // real examples
+    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
+    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
+
+    // the 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
+    //provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+
+    // the deobf configurations:  'deobfCompile' and 'deobfProvided' are the same as the normal compile and provided,
+    // except that these dependencies get remapped to your current MCP mappings
+    //deobfCompile 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+    //deobfProvided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+
+    // for more info...
+    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+    // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
 
+processResources {
+    // this will ensure that this task is redone when the versions change.
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
 
-task deobfJar(type: Jar) {
-	from sourceSets.main.output
-	classifier = 'deobf'
-	destinationDir = file 'releases/API'
-}
-
-task sourceJar(type: Jar) {
-	from sourceSets.main.allSource
-	classifier = 'sources'
-	destinationDir = file 'releases/API'
-}
-
-jar {
-	//Place jar into distribution folder
-	destinationDir = file 'releases'
-	//Keep the jar as clean as possible
-	includeEmptyDirs = false
-	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
-artifacts {
-	archives deobfJar
-	archives sourceJar
-	archives jar
+    // replace stuff in mcmod.info, nothing else
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+                
+        // replace version and mcversion
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+        
+    // copy everything else except the mcmod.info
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
 }

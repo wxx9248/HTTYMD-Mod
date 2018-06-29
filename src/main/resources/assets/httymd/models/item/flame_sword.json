@@ -1,0 +1,10 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "httymd:items/flame_sword_disabled"
+    },
+    "overrides": [
+        { "predicate": { "httymd:flame_on": 0.0000000 }, "model": "httymd:item/flame_sword_disabled" },
+        { "predicate": { "httymd:flame_on": 0.9999999 }, "model": "httymd:item/flame_sword_enabled" }
+    ]
+}

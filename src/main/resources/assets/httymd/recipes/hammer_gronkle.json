@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "httymd:hammer_gronkle",
+    "data": 0,
+    "count": 1
+  },
+  "pattern": [
+    "###",
+    "#|#",
+    " | "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "#": {
+      "item": "httymd:giron_ingot",
+      "data": 0
+    },
+    "|": {
+      "ore": "stickWood",
+      "type": "forge:ore_dict"
+    }
+  }
+}
