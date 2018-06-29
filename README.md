@@ -1,5 +1,5 @@
 
-![](resources/logo.gif?raw=true)
+![](src/main/resources/logo.png)
 ===============
 The Minecraft Mod that adds the (movie) HTTYD universe to Minecraft (and more)
 
