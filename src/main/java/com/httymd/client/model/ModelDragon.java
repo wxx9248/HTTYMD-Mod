@@ -1,6 +1,6 @@
 package com.httymd.client.model;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.lwjgl.opengl.GL11;
@@ -8,60 +8,65 @@ import org.lwjgl.opengl.GL11;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.passive.EntityTameable;
 import net.minecraft.util.math.MathHelper;
 
+import com.httymd.client.animation.Animation;
+import com.httymd.client.animation.AnimationHandler;
+import com.httymd.client.animation.AnimationHandler.Priority;
 import com.httymd.entity.EntityDragon;
 import com.httymd.entity.EntityTameableFlying;
 
 public abstract class ModelDragon extends ModelBase {
-	public interface ModelRendererFactory {
 
-		ModelRenderer get();
+	private final HashMap<EntityDragon, AnimationHandler> animationHandlerList;
+
+	protected ModelBase model = this;
+
+	public ModelDragon() {
+		animationHandlerList = new HashMap<>();
 	}
 
-	public ModelBase model = this;
-	// Dragon Parts
-	protected ModelRenderer head;
-	protected ModelRenderer body;
-	protected List<ModelRenderer> legs = new ArrayList<>();
+	public abstract ModelRenderer getRoot();
 
-	protected ModelRenderer wing;
+	public abstract ModelRenderer getHead();
+
+	public abstract List<ModelRenderer> getLegs();
+
+	public abstract ModelRenderer getWing();
+
+	public abstract Animation getIdle();
+
+	public abstract Animation getFlying();
+
+	public abstract Animation getSitting();
 
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
-		this.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 
-		boolean flag = ((EntityTameableFlying) entity).isFlying();
+		setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 
-		float pitch = flag ? entity.rotationPitch : 0;
 		GL11.glPushMatrix();
-		GL11.glRotatef(pitch * 0.8F, 1, 0, 0);
 
-		this.head.render(f5);
-		this.body.render(f5);
+		//GL11.glRotated(90, 0, 1, 0);
 
-		for (ModelRenderer leg : this.legs) {
-			if (flag)
-				leg.rotateAngleY = 0;
-			leg.render(f5);
-		}
+		boolean flying = ((EntityTameableFlying) entity).isFlying();
+		boolean sitting = ((EntityTameable) entity).isSitting();
 
-		GL11.glEnable(GL11.GL_CULL_FACE);
-		this.wing.render(f5);
-		GL11.glScalef(-1, 1, 1);
-		GL11.glCullFace(GL11.GL_FRONT);
-		this.wing.render(f5);
-		GL11.glScalef(-1, 1, 1);
-		GL11.glCullFace(GL11.GL_BACK);
-		GL11.glDisable(GL11.GL_CULL_FACE);
+		if (flying)
+			getAnimationHandler((EntityDragon) entity).addAnimation(getFlying(), Priority.WAIT_FOR_ANIM_TO_FINISH, true);
+		else if(sitting)
+			getAnimationHandler((EntityDragon) entity).addAnimation(getSitting(), Priority.WAIT_FOR_ANIM_TO_FINISH, true);
+		else
+			getAnimationHandler((EntityDragon) entity).addAnimation(getIdle(), Priority.WAIT_FOR_ANIM_TO_FINISH, true);
+
+		float pitch = flying ? entity.rotationPitch : 0;
+
+		GL11.glRotatef(pitch / 2, 1, 0, 0);
+
+		getRoot().render(f5);
 
 		GL11.glPopMatrix();
-	}
-
-	protected void setRotation(ModelRenderer model, float x, float y, float z) {
-		model.rotateAngleX = x;
-		model.rotateAngleY = y;
-		model.rotateAngleZ = z;
 	}
 
 	/**
@@ -78,46 +83,76 @@ public abstract class ModelDragon extends ModelBase {
 	 * @param f4
 	 *            lookAt spherical angle X
 	 * @param f5
-	 *            some weird parameter scaling the rotation point * @param f
+	 *            some weird parameter scaling the rotation point @param f
 	 * @param entity
 	 */
 	@Override
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
-		EntityDragon dragon = entity instanceof EntityDragon ? (EntityDragon)entity : null;
+		if (getHead() != null) {
+			getHead().rotateAngleX = f4 / (180F / (float) Math.PI);
+			getHead().rotateAngleY = f3 / (180F / (float) Math.PI);
+		}
 
-		this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
-		this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
+		getAnimationHandler((EntityDragon) entity).animate();
 
-		if (dragon != null)
-			if (dragon.isFlying()) {
-				this.head.rotateAngleX *= 0.8;
-				this.head.rotateAngleY *= 0.8;
-				for (int i = 0; i < this.legs.size(); i++)
-					this.legs.get(i).rotateAngleX = (float) Math.toRadians(45);
-				this.wing.rotateAngleZ = MathHelper.cos(entity.ticksExisted % 120 * 0.6662F) * 1.4f * f1;
-			} else {
-				for (int i = 0; i < this.legs.size(); i++)
-					this.legs.get(i).rotateAngleX = (i % 2 == 0 ? 1 : -1) * MathHelper.cos(f * 0.6662F) * 1.4f * f1;
-				this.wing.rotateAngleZ = 0;
+		if (((EntityDragon) entity).isFlying()) {
+			if (getHead() != null) {
+				getHead().rotateAngleX /= 2;
+				getHead().rotateAngleY /= 2;
 			}
+			if (getLegs() != null)
+				for (int i = 0; i < getLegs().size(); i++)
+					getLegs().get(i).rotateAngleX = 0;
+		} else if (!((EntityDragon) entity).isSitting()){
+			if (getLegs() != null)
+				for (int i = 0; i < getLegs().size(); i++){
+					float rx = (i % 2 == 0 ? 1 : -1) * MathHelper.cos(f * 0.6662F) * 1.4f * f1;
+					//System.out.println(rx);
+					getLegs().get(i).rotateAngleX = rx / 3;
+				}
+		}
 	}
-	/*
-	 * Warning: only call once, multiple calls will break this function
-	 *
-	 * @param entity The entity this flap is being applied to
-	 *
-	 * @param tick The current tick of flight
-	 *
-	 * @param flapSeconds The seconds it takes to flap
-	 *
-	 * @param maxFlapAngle the max angle from 0 (positive and negative) the wing
-	 * can deviate from
-	 *
-	 * protected void flapWings(EntityLiving entity, int tick, final int
-	 * flapSeconds, int maxFlapAngle) { int flapTicks = flapSeconds*20; boolean
-	 * moveWingsDown = tick%flapTicks==0 && tick%flapTicks>=flapTicks/2;
-	 *
-	 * wing.rotateAngleZ +=
-	 * (moveWingsDown?-1:1)*(Math.toRadians(maxFlapAngle)/flapTicks); }
-	 */
+
+	// XXX Here or in own class?
+	public class WingRenderer extends ModelRenderer {
+		public WingRenderer(ModelBase p_i1173_1_) {
+			super(p_i1173_1_);
+		}
+
+		public WingRenderer(ModelBase p_i1174_1, int p_i1174_2, int p_i1174_3_) {
+			super(p_i1174_1, p_i1174_2, p_i1174_3_);
+		}
+
+		public WingRenderer(ModelBase p_i1172_1, String p_i1172_2) {
+			super(p_i1172_1, p_i1172_2);
+		}
+
+		@Override
+		public void render(float p_78785_1_) {
+			GL11.glEnable(GL11.GL_CULL_FACE);
+			super.render(p_78785_1_);
+			GL11.glScalef(-1, 1, 1);
+			GL11.glCullFace(GL11.GL_FRONT);
+			super.render(p_78785_1_);
+			GL11.glScalef(-1, 1, 1);
+			GL11.glCullFace(GL11.GL_BACK);
+			GL11.glDisable(GL11.GL_CULL_FACE);
+		}
+
+	}
+
+	protected void setRotation(ModelRenderer model, float x, float y, float z) {
+		model.rotateAngleX = x;
+		model.rotateAngleY = y;
+		model.rotateAngleZ = z;
+	}
+
+	private AnimationHandler getAnimationHandler(EntityDragon entity) {
+		AnimationHandler animationHandler = animationHandlerList.get(entity);
+		if (animationHandler == null) {
+			animationHandler = new AnimationHandler(this);
+			animationHandlerList.put(entity, animationHandler);
+		}
+		return animationHandler;
+	}
 }

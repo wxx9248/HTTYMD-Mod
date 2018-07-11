@@ -2,9 +2,9 @@ package com.httymd.client.model.dragon;
 
 import net.minecraft.client.model.ModelRenderer;
 
-import com.httymd.client.model.ModelDragon;
+import com.httymd.client.model.ModelDragonOld;
 
-public class ModelSkrill extends ModelDragon {
+public class ModelSkrill extends ModelDragonOld {
 
 	public ModelSkrill() {
 		this.textureWidth = 512;

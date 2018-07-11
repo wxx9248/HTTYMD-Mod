@@ -2,7 +2,7 @@ package com.httymd.client.animation;
 
 import net.minecraft.client.model.ModelRenderer;
 
-import com.httymd.client.model.ModelDragonNew;
+import com.httymd.client.model.ModelDragon;
 import com.httymd.externals.org.apache.commons.math3.PolynomialSplineFunction;
 import com.httymd.externals.org.apache.commons.math3.SplineInterpolator;
 
@@ -53,7 +53,7 @@ public class Animation {
 		// System.exit(0);
 	}
 
-	protected void animate(ModelDragonNew dragon, long millis) {
+	protected void animate(ModelDragon dragon, long millis) {
 		// TODO this calculation only works with loops
 		float step = (float) millis % duration / duration * frames;
 		for (int componentId = 0; componentId < componentIDs.length; componentId++) {

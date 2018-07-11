@@ -1,9 +1,9 @@
 package com.httymd.client.animation;
 
-import com.httymd.client.model.ModelDragonNew;
+import com.httymd.client.model.ModelDragon;
 
 public class AnimationHandler {
-	private final ModelDragonNew dragon;
+	private final ModelDragon dragon;
 
 	private Animation currentAnimation;
 	private long currentStart;
@@ -17,7 +17,7 @@ public class AnimationHandler {
 		START_INSTANTLY, WAIT_FOR_ANIM_TO_FINISH
 	};
 
-	public AnimationHandler(ModelDragonNew dragon) {
+	public AnimationHandler(ModelDragon dragon) {
 		this.dragon = dragon;
 	}
 

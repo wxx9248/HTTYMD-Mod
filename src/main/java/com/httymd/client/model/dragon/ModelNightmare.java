@@ -2,9 +2,9 @@ package com.httymd.client.model.dragon;
 
 import net.minecraft.client.model.ModelRenderer;
 
-import com.httymd.client.model.ModelDragon;
+import com.httymd.client.model.ModelDragonOld;
 
-public class ModelNightmare extends ModelDragon {
+public class ModelNightmare extends ModelDragonOld {
 
 	public ModelNightmare() {
 		textureWidth = 259;

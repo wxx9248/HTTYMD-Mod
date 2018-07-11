@@ -13,7 +13,10 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import com.httymd.HTTYMDMod;
+import com.httymd.client.model.ModelDragonOld;
 import com.httymd.entity.EntityDragon;
+
+import com.tom.animator.parser.OldModelFormatParser;
 
 @SideOnly(Side.CLIENT)
 public class RenderDragon extends RenderLiving {
@@ -21,6 +24,10 @@ public class RenderDragon extends RenderLiving {
 
 	public RenderDragon(RenderManager m, ModelBase modelbaseIn, float shadowsizeIn) {
 		super(m, modelbaseIn, shadowsizeIn);
+		if(modelbaseIn instanceof ModelDragonOld){
+			ModelDragonOld old = (ModelDragonOld) modelbaseIn;
+			OldModelFormatParser.dump(old.head, old.body, old.legs, old.wing);
+		}
 	}
 
 	@Override
