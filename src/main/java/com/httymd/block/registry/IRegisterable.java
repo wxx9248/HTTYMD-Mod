@@ -1,20 +1,20 @@
 package com.httymd.block.registry;
 
+import com.httymd.item.util.ItemUtils;
 import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
 
-import com.httymd.item.util.ItemUtils;
+public interface IRegisterable
+{
 
-public interface IRegisterable {
+    /**
+     * Retrieves Registry Name for Block (commonly using {@link ItemUtils#findRegistryName(String)}
+     */
+    ResourceLocation getRegistryName();
 
-	/**
-	 * Retrieves Registry Name for Block (commonly using {@link ItemUtils#findRegistryName(String)}
-	 */
-	public ResourceLocation getRegistryName();
-
-	/**
-	 * Registers the block (commonly using {@link BlockRegistry#registerBlock(Block, String)}
-	 */
-	public Block registerBlock();
+    /**
+     * Registers the block (commonly using {@link BlockRegistry#registerBlock(Block, String)}
+     */
+    Block registerBlock();
 
 }

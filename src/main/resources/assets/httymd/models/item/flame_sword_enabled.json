@@ -1,6 +1,6 @@
 {
-        "parent": "item/generated",
-    "textures":{
-        "layer0": "httymd:items/flame_sword"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "httymd:items/flame_sword"
+  }
 }

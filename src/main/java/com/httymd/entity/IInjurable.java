@@ -2,51 +2,60 @@ package com.httymd.entity;
 
 import net.minecraft.util.DamageSource;
 
-public interface IInjurable {
+public interface IInjurable
+{
 
-	public class Injury {
+    Injury[] getInjurys();
 
-		private String name;
-		private int damage;
-		private DamageSource source;
+    void onInjury(Injury injury);
 
-		public Injury(int baseDamage, DamageSource source) {
-			this("", baseDamage, source);
+    class Injury
+    {
 
-			char[] cArr = source.getDamageType().toCharArray();
-			cArr[0] = Character.toUpperCase(cArr[0]);
+        private final int          damage;
+        private final DamageSource source;
+        private       String       name;
 
-			this.name = String.copyValueOf(cArr);
-		}
+        public Injury(int baseDamage, DamageSource source)
+        {
+            this("", baseDamage, source);
 
-		public Injury(String name, DamageSource source) {
-			this(name, 1, source);
-		}
+            char[] cArr = source.getDamageType().toCharArray();
+            cArr[0] = Character.toUpperCase(cArr[0]);
 
-		public Injury(String name, int baseDamage, DamageSource source) {
-			this(name, baseDamage, 1, source);
-		}
+            this.name = String.copyValueOf(cArr);
+        }
 
-		public Injury(String name, int baseDamage, int damageMultipler, DamageSource source) {
-			this.name = name;
-			this.damage = baseDamage * damageMultipler;
-			this.source = source;
-		}
+        public Injury(String name, DamageSource source)
+        {
+            this(name, 1, source);
+        }
 
-		public int getDamage() {
-			return this.damage;
-		}
+        public Injury(String name, int baseDamage, DamageSource source)
+        {
+            this(name, baseDamage, 1, source);
+        }
 
-		public String getName() {
-			return this.name;
-		}
+        public Injury(String name, int baseDamage, int damageMultipler, DamageSource source)
+        {
+            this.name   = name;
+            this.damage = baseDamage * damageMultipler;
+            this.source = source;
+        }
 
-		public DamageSource getSource() {
-			return this.source;
-		}
-	}
+        public int getDamage()
+        {
+            return this.damage;
+        }
 
-	public Injury[] getInjurys();
+        public String getName()
+        {
+            return this.name;
+        }
 
-	public void onInjury(Injury injury);
+        public DamageSource getSource()
+        {
+            return this.source;
+        }
+    }
 }

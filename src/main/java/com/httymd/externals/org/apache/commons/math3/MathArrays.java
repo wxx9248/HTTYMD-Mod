@@ -22,32 +22,37 @@ package com.httymd.externals.org.apache.commons.math3;
  *
  * @since 3.0
  */
-public class MathArrays {
-	/**
-	 * Check that the given array is sorted.
-	 *
-	 * @param val
-	 *            Values.
-	 * @return {@code true} if the array is sorted.
-	 */
-	public static boolean checkOrder(double[] val) {
-		double previous = val[0];
-		final int max = val.length;
+public class MathArrays
+{
+    /**
+     * Check that the given array is sorted.
+     *
+     * @param val Values.
+     *
+     * @return {@code true} if the array is sorted.
+     */
+    public static boolean checkOrder(double[] val)
+    {
+        double    previous = val[0];
+        final int max      = val.length;
 
-		int index;
-		for (index = 1; index < max; index++) {
-			if (val[index] <= previous) {
-				break;
-			}
-			previous = val[index];
-		}
+        int index;
+        for (index = 1; index < max; index++)
+        {
+            if (val[index] <= previous)
+            {
+                break;
+            }
+            previous = val[index];
+        }
 
-		if (index == max) {
-			// Loop completed.
-			return true;
-		}
+        if (index == max)
+        {
+            // Loop completed.
+            return true;
+        }
 
-		// Loop early exit means wrong ordering.
-		throw new RuntimeException("Not a monotonic sequence!");
-	}
+        // Loop early exit means wrong ordering.
+        throw new RuntimeException("Not a monotonic sequence!");
+    }
 }

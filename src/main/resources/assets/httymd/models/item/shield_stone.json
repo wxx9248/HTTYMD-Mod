@@ -4,6 +4,11 @@
     "layer0": "httymd:items/shield_stone"
   },
   "overrides": [
-    { "predicate": { "blocking": 1 }, "model": "httymd:item/shield_stone_blocking" }
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "httymd:item/shield_stone_blocking"
+    }
   ]
 }

@@ -1,32 +1,36 @@
 package com.httymd.client;
 
-import java.util.Set;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
-
 import net.minecraftforge.fml.client.IModGuiFactory;
 
-public class GuiFactoryDragons implements IModGuiFactory {
+import java.util.Set;
 
-	@Override
-	public void initialize(Minecraft minecraftInstance) {
+public class GuiFactoryDragons implements IModGuiFactory
+{
 
-	}
+    @Override
+    public void initialize(Minecraft minecraftInstance)
+    {
 
-	@Override
-	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories() {
-		return null;
-	}
+    }
 
-	@Override
-	public boolean hasConfigGui() {
-		return false;
-	}
+    @Override
+    public Set<RuntimeOptionCategoryElement> runtimeGuiCategories()
+    {
+        return null;
+    }
 
-	@Override
-	public GuiScreen createConfigGui(GuiScreen parentScreen) {
-		return null;
-	}
+    @Override
+    public boolean hasConfigGui()
+    {
+        return false;
+    }
+
+    @Override
+    public GuiScreen createConfigGui(GuiScreen parentScreen)
+    {
+        return null;
+    }
 
 }

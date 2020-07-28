@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="HTTYMD-mod" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34473454-6fcd-4b9e-806a-80810571c217" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/HTTYMDMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/HTTYMDMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockCompressedExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockCompressedExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/BlockRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/BlockRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/IRegisterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/IRegisterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiConfigDragons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiConfigDragons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiFactoryDragons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiFactoryDragons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/Animation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationDataCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationDataCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/AudioRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/AudioRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/SoundEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/SoundEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/event/PlayerClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/event/PlayerClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragonOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragonOld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelGlideSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelGlideSuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelDeadlyNadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelDeadlyNadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightFury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightFury.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightmare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightmare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelSkrill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelSkrill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelTerribleTerror.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelTerribleTerror.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderGlide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderGlide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/KeyInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/KeyInputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/WingRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/WingRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/CommonProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/PlyJumpMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/PlyJumpMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityTameableFlying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityTameableFlying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityVikingBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityVikingBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IFlyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IFlyable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IInjurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IInjurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITameable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITameable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITrustable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITrustable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityGronkle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityGronkle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityLightFury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityLightFury.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightFury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightFury.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightmare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightmare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntitySkrill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntitySkrill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityTerribleTerror.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityTerribleTerror.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityZippleback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityZippleback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIRidden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIRidden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIStartled.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIStartled.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIWeary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIWeary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityDragonAIWander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityDragonAIWander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/event/ForgeEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/event/ForgeEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/event/KeyPressEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/event/KeyPressEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/MathArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/MathArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialSplineFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialSplineFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/SplineInterpolator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/SplineInterpolator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/IDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/IDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemArmorExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemArmorExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemDagger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemDagger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFlameSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFlameSword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemGlideArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemGlideArmor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemShieldM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemShieldM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemSpawnEgg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemSpawnEgg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemToolExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemToolExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWarhammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWarhammer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeaponCrossbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeaponCrossbow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/recipe/RecipeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/recipe/RecipeRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/IRegisterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/IRegisterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/ItemRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/ItemRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/MaterialRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/MaterialRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/WorldItemRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/WorldItemRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumFoodType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumFoodType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumToolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumToolType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumWeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumWeaponType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/ItemUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/ItemUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/CreativeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/CreativeTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/DragonDamageSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/DragonDamageSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/EventRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/EventRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/NameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/NameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/StatListMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/StatListMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/blockstates/giron_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/blockstates/giron_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/block/giron_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/block/giron_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_item.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_disabled.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_disabled.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_enabled.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_enabled.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_ingot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_ingot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base_blocking.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base_blocking.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_diamond.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_diamond.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gold.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gold.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gronkle.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gronkle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_iron.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_iron.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_wood.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/wing_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/wing_item.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/sounds.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version-check.json" beforeDir="false" afterPath="$PROJECT_DIR$/version-check.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+    <option name="REVERSE_PATCH" value="false" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ModuleEditorState">
+    <option name="LAST_EDITED_MODULE_NAME" />
+    <option name="LAST_EDITED_TAB_NAME" />
+  </component>
+  <component name="ProjectId" id="1fIeztoz7hSqLr9UpGACkLzgR7o" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state />
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15173116" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RunManager" selected="Application.Minecraft Client">
+    <configuration default="true" factoryName="Applet" type="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option enabled="false" name="BuildArtifacts" />
+        <option enabled="true" name="Make" />
+      </method>
+    </configuration>
+    <configuration default="true" name="&lt;template&gt;" selected="false" type="WebApp">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="Minecraft Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <module name="HTTYMD-mod_main" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HTTYMD-mod_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="Minecraft Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <module name="HTTYMD-mod_main" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HTTYMD-mod_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="false" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34473454-6fcd-4b9e-806a-80810571c217" name="Default Changelist" comment="" />
+      <created>1595910307698</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595910307698</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="307" y="180" width="998" height="708" key="SettingsEditor" timestamp="1595916843559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="307" y="180" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595916843559" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1595914530062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595914530062" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595914542907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595914542907" />
+  </component>
+</project>

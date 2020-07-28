@@ -4,6 +4,11 @@
     "layer0": "httymd:items/shield_gronkle"
   },
   "overrides": [
-    { "predicate": { "blocking": 1 }, "model": "httymd:item/shield_gronkle_blocking" }
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "httymd:item/shield_gronkle_blocking"
+    }
   ]
 }

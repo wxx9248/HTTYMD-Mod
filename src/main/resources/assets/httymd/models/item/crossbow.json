@@ -1,11 +1,26 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "httymd:items/crossbow_item"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "httymd:items/crossbow_item"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "httymd:bowstate": 0.0000000
+      },
+      "model": "httymd:item/crossbow_item"
     },
-    "overrides": [
-        { "predicate": { "httymd:bowstate": 0.0000000 }, "model": "httymd:item/crossbow_item" },
-        { "predicate": { "httymd:bowstate": 0.5 }, "model": "httymd:item/crossbow_0" },
-        { "predicate": { "httymd:bowstate": 0.9999999 }, "model": "httymd:item/crossbow_1" }
-    ]
+    {
+      "predicate": {
+        "httymd:bowstate": 0.5
+      },
+      "model": "httymd:item/crossbow_0"
+    },
+    {
+      "predicate": {
+        "httymd:bowstate": 0.9999999
+      },
+      "model": "httymd:item/crossbow_1"
+    }
+  ]
 }

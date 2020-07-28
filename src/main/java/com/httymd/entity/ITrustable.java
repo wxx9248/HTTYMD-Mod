@@ -1,23 +1,22 @@
 package com.httymd.entity;
 
-import java.util.List;
-
 import net.minecraft.entity.EntityLivingBase;
 
-public interface ITrustable {
+import java.util.List;
 
-	public List<EntityLivingBase> getEnemyEntities();
+public interface ITrustable
+{
 
-	public int getEnemyThreshold();
+    List<EntityLivingBase> getEnemyEntities();
 
-	/**
-	 * Retrieves the level of trust from this entity for specific entities, some
-	 * actions are able to increase this while others decrease it, determines
-	 * how it reacts to you
-	 *
-	 * @param entityLiving
-	 *            The entity to trust
-	 */
-	public int getTrustLevelFor(EntityLivingBase entityLiving);
+    int getEnemyThreshold();
+
+    /**
+     * Retrieves the level of trust from this entity for specific entities, some actions are able to increase this while
+     * others decrease it, determines how it reacts to you
+     *
+     * @param entityLiving The entity to trust
+     */
+    int getTrustLevelFor(EntityLivingBase entityLiving);
 
 }

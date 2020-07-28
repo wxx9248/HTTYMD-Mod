@@ -1,16 +1,17 @@
 package com.httymd.item.recipe;
 
-import java.util.Collection;
-
+import com.httymd.item.registry.ItemRegistry;
+import com.httymd.item.util.EnumFoodType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import com.httymd.item.registry.ItemRegistry;
-import com.httymd.item.util.EnumFoodType;
+import java.util.Collection;
 
-public class RecipeRegistry {
+public class RecipeRegistry
+{
 
-	public static void init() {
+    public static void init()
+    {
 		/*addRecipe(new ItemStack(ItemRegistry.daggerWood),
 				"#", "|", '|', "stickWood", '#', "plankWood");
 		addRecipe(new ItemStack(ItemRegistry.daggerStone),
@@ -122,28 +123,36 @@ public class RecipeRegistry {
 				"III", "III", "III", 'I', ItemRegistry.gronkleIronIngot);/*
 		addShapelessRecipe(new ItemStack(ItemRegistry.gronkleIronIngot, 9), BlockRegistry.gronkleIronBlock);*/
 
-		/*
-		 * ItemStack stack = new ItemStack(ItemRegistry.zippleGasContainer);
-		 * ItemContainer.setProduceHeld(stack, 15.0F);
-		 * addRecipe(stack, "##", '#', Blocks.dirt);
-		 */
+        /*
+         * ItemStack stack = new ItemStack(ItemRegistry.zippleGasContainer);
+         * ItemContainer.setProduceHeld(stack, 15.0F);
+         * addRecipe(stack, "##", '#', Blocks.dirt);
+         */
 
-		// addRecipe(ItemRegistry.zippleGasContainer.getEmptyContainer(),
-		// "I#I", "I#I", "I#I", 'I', "ingotIron", '#',Blocks.glass_pane);
-		// addRecipe(ItemRegistry.nightmareSalivaContainer.getEmptyContainer(),
-		// "I-I", "I I", "III", 'I', "ingotIron", '-', Blocks.trapdoor);*/
-	}
-	private static void addRecipe(ItemStack stack, Object... objects){
-		try {
-			Class.forName("com.tom.api.recipes.RecipeHelper").getMethod("addRecipe", ItemStack.class, Object[].class).invoke(null, stack, objects);
-		} catch (Exception e) {
-		}
-	}
-	/**
-	 * Retrieves food array based on {@link EnumFoodType}
-	 */
-	private static Item[] getFoodArrByEnum(EnumFoodType type) {
-		Collection<Item> list = ItemRegistry.foods.get(type);
-		return list.toArray(new Item[list.size()]);
-	}
+        // addRecipe(ItemRegistry.zippleGasContainer.getEmptyContainer(),
+        // "I#I", "I#I", "I#I", 'I', "ingotIron", '#',Blocks.glass_pane);
+        // addRecipe(ItemRegistry.nightmareSalivaContainer.getEmptyContainer(),
+        // "I-I", "I I", "III", 'I', "ingotIron", '-', Blocks.trapdoor);*/
+    }
+
+    private static void addRecipe(ItemStack stack, Object... objects)
+    {
+        try
+        {
+            Class.forName("com.tom.api.recipes.RecipeHelper").getMethod("addRecipe", ItemStack.class, Object[].class)
+                 .invoke(null, stack, objects);
+        }
+        catch (Exception e)
+        {
+        }
+    }
+
+    /**
+     * Retrieves food array based on {@link EnumFoodType}
+     */
+    private static Item[] getFoodArrByEnum(EnumFoodType type)
+    {
+        Collection<Item> list = ItemRegistry.foods.get(type);
+        return list.toArray(new Item[list.size()]);
+    }
 }

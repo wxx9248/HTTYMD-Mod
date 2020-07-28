@@ -4,6 +4,11 @@
     "layer0": "httymd:items/shield_wood"
   },
   "overrides": [
-    { "predicate": { "blocking": 1 }, "model": "httymd:item/shield_wood_blocking" }
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "httymd:item/shield_wood_blocking"
+    }
   ]
 }

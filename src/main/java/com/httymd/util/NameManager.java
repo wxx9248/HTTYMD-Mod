@@ -1,123 +1,134 @@
 package com.httymd.util;
 
-import java.util.ArrayList;
-
+import com.httymd.HTTYMDMod;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.stats.StatList;
 
-import com.httymd.HTTYMDMod;
+import java.util.ArrayList;
 
-public class NameManager {
+public class NameManager
+{
 
-	public interface ISpecialName {
-		public String get(EntityLivingBase entity, String currentName);
-	}
+    private static final NameManager             INSTANCE     = new NameManager();
+    private final        ArrayList<String>       randomNames  = new ArrayList<>();
+    private final        ArrayList<ISpecialName> specialNames = new ArrayList<>();
 
-	private static final NameManager INSTANCE = new NameManager();
+    private NameManager()
+    {
+        this.registerRandomName("smelly");
+        this.registerRandomName("angry");
+        this.registerRandomName("fat");
+        this.registerRandomName("big");
+        this.registerRandomName("wimp");
+        this.registerRandomName("dragonslayer");
+        this.registerRandomName("meatslapper");
+        this.registerRandomName("murderer");
+        this.registerRandomName("nut");
+        this.registerRandomName("jerk");
+        this.registerRandomName("melon");
+        this.registerRandomName("jackolatern");
+        this.registerRandomName("blind");
+        this.registerRandomName("crazy");
+        this.registerRandomName("freak");
+        this.registerRandomName("broken");
+        this.registerRandomName("stupid");
+        this.registerSpecialName(new ISpecialName()
+        {
+            @Override
+            public String get(EntityLivingBase entity, String currentName)
+            {
+                if (!(entity instanceof EntityPlayer))
+                    return null;
 
-	public static NameManager getInstance() {
-		return INSTANCE;
-	}
+                String id = ((EntityPlayer) entity).getGameProfile().getId().toString();
 
-	private final ArrayList<String> randomNames = new ArrayList<>();
+                if ("b2848781-aafe-454b-a87d-89ceffad585f".equals(id))
+                    return "s322";
 
-	private final ArrayList<ISpecialName> specialNames = new ArrayList<>();
+                if ("5c884585-0245-4452-bcac-5005c73d3196".equals(id))
+                    return "cmmr";
 
-	private NameManager() {
-		this.registerRandomName("smelly");
-		this.registerRandomName("angry");
-		this.registerRandomName("fat");
-		this.registerRandomName("big");
-		this.registerRandomName("wimp");
-		this.registerRandomName("dragonslayer");
-		this.registerRandomName("meatslapper");
-		this.registerRandomName("murderer");
-		this.registerRandomName("nut");
-		this.registerRandomName("jerk");
-		this.registerRandomName("melon");
-		this.registerRandomName("jackolatern");
-		this.registerRandomName("blind");
-		this.registerRandomName("crazy");
-		this.registerRandomName("freak");
-		this.registerRandomName("broken");
-		this.registerRandomName("stupid");
-		this.registerSpecialName(new ISpecialName() {
-			@Override
-			public String get(EntityLivingBase entity, String currentName) {
-				if (!(entity instanceof EntityPlayer))
-					return null;
+                return null;
+            }
+        });
+        this.registerSpecialName(new ISpecialName()
+        {
+            @Override
+            public String get(EntityLivingBase entity, String currentName)
+            {
+                if (!(entity instanceof EntityPlayerMP))
+                    return null;
 
-				String id = ((EntityPlayer) entity).getGameProfile().getId().toString();
+                EntityPlayerMP ply = (EntityPlayerMP) entity;
 
-				if ("b2848781-aafe-454b-a87d-89ceffad585f".equals(id))
-					return "s322";
+                if (Utils.hasPlayerGained(ply, StatList.DAMAGE_DEALT, 200000))
+                {
+                    return "ataryn";
+                }
 
-				if ("5c884585-0245-4452-bcac-5005c73d3196".equals(id))
-					return "cmmr";
+                if (Utils.hasPlayerGained(ply, StatListMod.distanceByDragon, 3000))
+                    return "rider";
 
-				return null;
-			}
-		});
-		this.registerSpecialName(new ISpecialName() {
-			@Override
-			public String get(EntityLivingBase entity, String currentName) {
-				if (!(entity instanceof EntityPlayerMP))
-					return null;
+                if (Utils.hasPlayerGained(ply, StatList.PLAYER_KILLS, 100)
+                    || Utils.hasPlayerGained(ply, StatList.DAMAGE_TAKEN, 9000000))
+                    return "relentless";
+                else if (Utils.hasPlayerGained(ply, StatList.DEATHS, 100))
+                    return "slayed";
+                else if (Utils.hasPlayerGained(ply, StatList.JUMP, 5000))
+                    return "excited";
+                else if (Utils.hasPlayerGained(ply, StatList.MOB_KILLS, 400))
+                    return "champion";
+                else if (Utils.hasPlayerGained(ply, StatList.BOAT_ONE_CM, 2000))
+                    return "sailor";
 
-				EntityPlayerMP ply = (EntityPlayerMP) entity;
+                return null;
+            }
+        });
+    }
 
-				if (Utils.hasPlayerGained(ply, StatList.DAMAGE_DEALT, 200000)) {
-					return "ataryn";
-				}
+    public static NameManager getInstance()
+    {
+        return INSTANCE;
+    }
 
-				if (Utils.hasPlayerGained(ply, StatListMod.distanceByDragon, 3000))
-					return "rider";
+    public String getDisplayName(EntityLivingBase entity, String originalName)
+    {
+        String translateStr;
+        String newName;
 
-				if (Utils.hasPlayerGained(ply, StatList.PLAYER_KILLS, 100)
-						|| Utils.hasPlayerGained(ply, StatList.DAMAGE_TAKEN, 9000000))
-					return "relentless";
-				else if (Utils.hasPlayerGained(ply, StatList.DEATHS, 100))
-					return "slayed";
-				else if (Utils.hasPlayerGained(ply, StatList.JUMP, 5000))
-					return "excited";
-				else if (Utils.hasPlayerGained(ply, StatList.MOB_KILLS, 400))
-					return "champion";
-				else if (Utils.hasPlayerGained(ply, StatList.BOAT_ONE_CM, 2000))
-					return "sailor";
+        for (ISpecialName name : this.specialNames)
+        {
+            newName = name.get(entity, originalName);
+            if (newName != null)
+            {
+                translateStr = HTTYMDMod.ID + ":" + "name.special.add." + newName;
+                if (I18n.hasKey(translateStr))
+                    return I18n.format(translateStr, originalName);
+                return originalName + " the " + newName;
+            }
+        }
 
-				return null;
-			}
-		});
-	}
+        newName = this.randomNames.get(entity.getRNG().nextInt(this.randomNames.size()));
+        return I18n.format(HTTYMDMod.ID + ":" + "name.random." + newName, originalName);
+        //return newName;
+    }
 
-	public String getDisplayName(EntityLivingBase entity, String originalName) {
-		String translateStr;
-		String newName;
+    public void registerRandomName(String name)
+    {
+        this.randomNames.add(name);
+    }
 
-		for (ISpecialName name : this.specialNames) {
-			newName = name.get(entity, originalName);
-			if (newName != null) {
-				translateStr = HTTYMDMod.ID + ":" + "name.special.add." + newName;
-				if (I18n.hasKey(translateStr))
-					return I18n.format(translateStr, originalName);
-				return originalName + " the " + newName;
-			}
-		}
+    public void registerSpecialName(ISpecialName sName)
+    {
+        this.specialNames.add(sName);
+    }
 
-		newName = this.randomNames.get(entity.getRNG().nextInt(this.randomNames.size()));
-		return I18n.format(HTTYMDMod.ID + ":" + "name.random." + newName, originalName);
-		//return newName;
-	}
-
-	public void registerRandomName(String name) {
-		this.randomNames.add(name);
-	}
-
-	public void registerSpecialName(ISpecialName sName) {
-		this.specialNames.add(sName);
-	}
+    public interface ISpecialName
+    {
+        String get(EntityLivingBase entity, String currentName);
+    }
 
 }
