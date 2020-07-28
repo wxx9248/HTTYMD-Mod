@@ -7,125 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34473454-6fcd-4b9e-806a-80810571c217" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTTYMD-mod.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/HTTYMDMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/HTTYMDMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockCompressedExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockCompressedExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/BlockExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/BlockRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/BlockRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/IRegisterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/block/registry/IRegisterable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/ClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiConfigDragons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiConfigDragons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiFactoryDragons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/GuiFactoryDragons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/Animation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationDataCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationDataCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/animation/AnimationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/AudioRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/AudioRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/SoundEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/audio/SoundEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/event/PlayerClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/event/PlayerClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragonOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelDragonOld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelGlideSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/ModelGlideSuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelDeadlyNadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelDeadlyNadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightFury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightFury.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightmare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelNightmare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelSkrill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelSkrill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelTerribleTerror.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/model/dragon/ModelTerribleTerror.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderGlide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/render/RenderGlide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/KeyInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/KeyInputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/WingRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/client/util/WingRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/CommonProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/ControlMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/PlyJumpMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/common/network/PlyJumpMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityTameableFlying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityTameableFlying.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityVikingBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/EntityVikingBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IFlyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IFlyable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IInjurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/IInjurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITameable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITameable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITrustable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/ITrustable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityGronkle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityGronkle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityLightFury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityLightFury.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightFury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightFury.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightmare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityNightmare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntitySkrill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntitySkrill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityTerribleTerror.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityTerribleTerror.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityZippleback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/EntityZippleback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIRidden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIRidden.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIStartled.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIStartled.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIWeary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityAIWeary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityDragonAIWander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/entity/dragon/ai/EntityDragonAIWander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/event/ForgeEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/event/ForgeEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/event/KeyPressEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/event/KeyPressEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/MathArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/MathArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialSplineFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/PolynomialSplineFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/SplineInterpolator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/externals/org/apache/commons/math3/SplineInterpolator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/IDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/IDrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemArmorExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemArmorExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemDagger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemDagger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFlameSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFlameSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodDrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemFoodExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemGlideArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemGlideArmor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemShieldM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemShieldM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemSpawnEgg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemSpawnEgg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemToolExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemToolExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWarhammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWarhammer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeaponCrossbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/ItemWeaponCrossbow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/recipe/RecipeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/recipe/RecipeRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/IRegisterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/IRegisterable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/ItemRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/ItemRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/MaterialRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/MaterialRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/WorldItemRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/registry/WorldItemRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumFoodType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumFoodType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumToolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumToolType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumWeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/EnumWeaponType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/ItemUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/item/util/ItemUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/CreativeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/CreativeTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/DragonDamageSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/DragonDamageSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/EventRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/EventRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/NameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/NameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/StatListMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/StatListMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/httymd/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/httymd/util/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/blockstates/giron_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/blockstates/giron_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/block/giron_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/block/giron_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/crossbow_item.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_disabled.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_disabled.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_enabled.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/flame_sword_enabled.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_ingot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/giron_ingot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base_blocking.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_base_blocking.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_diamond.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_diamond.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gold.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gold.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gronkle.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_gronkle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_iron.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_iron.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_stone.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/shield_wood.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/wing_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/models/item/wing_item.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/httymd/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/httymd/sounds.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/version-check.json" beforeDir="false" afterPath="$PROJECT_DIR$/version-check.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTTYMD-mod.api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HTTYMD-mod.api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTTYMD-mod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HTTYMD-mod.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTTYMD-mod.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/HTTYMD-mod.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTTYMD-mod.iws" beforeDir="false" afterPath="$PROJECT_DIR$/HTTYMD-mod.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTTYMD-mod.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HTTYMD-mod.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTTYMD-mod.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HTTYMD-mod.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,9 +69,34 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HTTYMD-mod" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HTTYMD-mod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HTTYMD-mod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HTTYMD-mod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -221,12 +135,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15173116" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.HTTYMD-mod [jar]">
     <configuration default="true" factoryName="Applet" type="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -272,6 +186,36 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HTTYMD-mod_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HTTYMD-mod_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
     <configuration name="Minecraft Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
       <module name="HTTYMD-mod_main" />
@@ -297,12 +241,61 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HTTYMD-mod_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../HTTYMD-mod\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HTTYMD-mod_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="HTTYMD-mod [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -327,6 +320,11 @@
         <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.HTTYMD-mod [jar]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -346,10 +344,34 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="307" y="180" width="998" height="708" key="SettingsEditor" timestamp="1595916843559">
+    <state x="636" y="244" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1595920394641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="307" y="180" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595916843559" />
+    <state x="636" y="244" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595920394641" />
+    <state x="586" y="275" key="FileChooserDialogImpl" timestamp="1595920312735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595920312735" />
+    <state width="914" height="216" key="GridCell.Tab.0.bottom" timestamp="1595920440835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595920440835" />
+    <state width="914" height="216" key="GridCell.Tab.0.center" timestamp="1595920440835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="216" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595920440835" />
+    <state width="914" height="216" key="GridCell.Tab.0.left" timestamp="1595920440835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="216" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595920440835" />
+    <state width="914" height="216" key="GridCell.Tab.0.right" timestamp="1595920440835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="216" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595920440835" />
+    <state x="307" y="180" width="998" height="708" key="SettingsEditor" timestamp="1595920742879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="307" y="180" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595920742879" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1595914530062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

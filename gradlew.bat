@@ -5,6 +5,8 @@
 @rem
 @rem ##########################################################################
 
+set GRADLE_OPTS=-Dgradle.user.home=%~dp0\.gradle
+
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
 

@@ -6,6 +6,6 @@
 bin/
 classes/
 minecraft/
-HTTYMD.iml
-build
+build/
+run/
 push.bat
